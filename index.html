@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Skinlab Clinic Home Test Page</title>
+
+    <!-- Meta Tags -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- All Modals -->
+    <div class="custom__modals">
+      <!-- Login Modal -->
+      <div
+        class="filter-sidebar-overlay modal modal--center modal--login"
+        id="modalLogin"
+      >
+        <div class="filter-sidebar-wrapper">
+          <div class="filter-sidebar-area">
+            <div class="filter-sidebar">
+              <button class="filter-sidebar__close" onclick="closeAllModals()">
+                <img src="img/close.png" alt="close" />
+              </button>
+
+              <div class="filter-sidebar__header">
+                <h2 class="heading-5">Inloggen</h2>
+              </div>
+
+              <div class="filter-sidebar__close-title">
+                <p>Sluit</p>
+              </div>
+
+              <form class="auth-form">
+                <div class="auth__inputs">
+                  <!-- Single Input -->
+                  <div class="auth__input">
+                    <input
+                      type="email"
+                      class="input-style"
+                      id="loginEmail"
+                      name="loginEmail"
+                      placeholder="E-mailadres"
+                    />
+                  </div>
+                  <!-- Single Input -->
+
+                  <!-- Single Input -->
+                  <div class="auth__input">
+                    <input
+                      type="password"
+                      class="input-style input-style--password-login"
+                      id="loginPassword"
+                      name="loginPassword"
+                      placeholder="Wachtwoord"
+                    />
+
+                    <button
+                      type="button"
+                      class="password__eye password__eye--login"
+                    >
+                      Toon
+                    </button>
+                  </div>
+                  <!-- Single Input -->
+                </div>
+
+                <a class="auth__forget-pass" href="#">Wachtwoord vergeten?</a>
+
+                <button
+                  type="submit"
+                  class="custom-btn custom-btn--standard custom-btn--full custom-btn--round"
+                >
+                  Inloggen
+                </button>
+
+                <button
+                  type="button"
+                  class="custom-btn custom-btn--standard custom-btn-secondary custom-btn--social custom-btn--full"
+                >
+                  <span><img src="img/facebook.svg" alt="facebook" /></span>
+                  Login met Facebook
+                </button>
+
+                <!-- Of Divider -->
+                <div class="total__products auth-divider">
+                  <div class="total__products-line"></div>
+                  <p>OF</p>
+                  <div class="total__products-line"></div>
+                </div>
+                <!-- Of Divider -->
+
+                <button
+                  id="openModalBtnRegister"
+                  type="button"
+                  class="custom-btn custom-btn--standard custom-btn-secondary custom-btn--full"
+                >
+                  Maak een account aan
+                </button>
+
+                <p class="auth__bottom-note">
+                  Maak een account aan en krijg <a href="#">100</a> spaarpunten
+                  <a href="#">cadeau</a>!
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Login Modal -->
+
+      <!-- Register Modal -->
+      <div
+        class="filter-sidebar-overlay modal modal--center modal--register"
+        id="modalRegister"
+      >
+        <div class="filter-sidebar-wrapper">
+          <div class="filter-sidebar-area">
+            <div class="filter-sidebar">
+              <button class="filter-sidebar__close" onclick="closeAllModals()">
+                <img src="img/close.png" alt="close" />
+              </button>
+
+              <div class="filter-sidebar__header">
+                <h2 class="heading-5">Registreren</h2>
+              </div>
+
+              <div class="filter-sidebar__close-title">
+                <p>Sluit</p>
+              </div>
+
+              <form class="auth-form">
+                <div class="auth__inputs">
+                  <!-- Single Input -->
+                  <div class="auth__input">
+                    <input
+                      type="email"
+                      class="input-style"
+                      id="registerEmail"
+                      name="registerEmail"
+                      placeholder="E-mailadres"
+                    />
+                  </div>
+                  <!-- Single Input -->
+
+                  <!-- Single Input -->
+                  <div class="auth__input">
+                    <input
+                      type="password"
+                      class="input-style input-style--password-register"
+                      id="registerPassword"
+                      name="registerPassword"
+                      placeholder="Wachtwoord"
+                    />
+
+                    <button
+                      type="button"
+                      class="password__eye password__eye--register"
+                    >
+                      Toon
+                    </button>
+                  </div>
+                  <!-- Single Input -->
+                </div>
+
+                <button
+                  type="submit"
+                  class="custom-btn custom-btn--standard custom-btn-secondary custom-btn--full"
+                >
+                  Registrer
+                </button>
+
+                <p class="auth__bottom-note">
+                  Na registratie krijg je <a href="#">100</a> spaarpunten
+                  <a href="#">cadeau,</a> deze zijn te vinden in je
+                  <a href="#">geregistreerde account.</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Register Modal -->
+    </div>
+    <!-- All Modals -->
+
+    <!-- Header Area -->
+    <header class="header">
+      <!-- Top Header -->
+      <div class="top-header">
+        <a class="top-header__contact" href="tel:+310850602446"
+          ><span><img src="img/phone.png" alt="phone" /></span> +31 (0)85 060 24
+          46</a
+        >
+
+        <ul class="top-header__links">
+          <li><a href="#" class="top-header__link">Over ons</a></li>
+          <li><a href="#" class="top-header__link">Blog</a></li>
+          <li><a href="#" class="top-header__link">FAQ</a></li>
+          <li><a href="#" class="top-header__link">Recensies</a></li>
+          <li><a href="#" class="top-header__link">Contact</a></li>
+          <span class="target2"></span>
+        </ul>
+
+        <a class="top-header__contact" href="mailto:info@skinlabclinic.nl"
+          >info@skinlabclinic.nl</a
+        >
+      </div>
+      <!-- Top Header -->
+
+      <!-- Main Header -->
+      <nav class="main-header-area">
+        <div class="container">
+          <div class="main-header">
+            <div class="main-header__left">
+              <a href="#" class="nav-logo">
+                <img src="img/logo.png" alt="logo" />
+              </a>
+
+              <ul class="main-header__links">
+                <li class="main-header__links-submenu">
+                  <a class="main-header__link" href="#">Huidproblemen</a>
+
+                  <div class="submenu-area">
+                    <div class="container">
+                      <div class="submenu">
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-header__links-submenu">
+                  <a class="main-header__link" href="#">Behandelingen</a>
+
+                  <div class="submenu-area">
+                    <div class="container">
+                      <div class="submenu">
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-header__links-submenu">
+                  <a class="main-header__link" href="#">Laserontharen</a>
+
+                  <div class="submenu-area">
+                    <div class="container">
+                      <div class="submenu">
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="main-header__link" href="#">Prijzen</a>
+                </li>
+                <li class="main-header__link main-header__links-submenu">
+                  <a href="#">Webshop</a>
+
+                  <div class="submenu-area">
+                    <div class="container">
+                      <div class="submenu">
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+
+                        <div class="submenu__items-area">
+                          <p>Grove huid</p>
+
+                          <div class="submenu__items">
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                            <a href="#"> > Acne littekens</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="main-header__link" href="#">De Kliniek</a>
+                </li>
+                <li><a class="main-header__link" href="#">Zorgcheck</a></li>
+                <span class="target"></span>
+              </ul>
+
+              <div class="basic-accordion nav-accordion">
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <div class="accordion__question-area">
+                    <a href="#" class="accordion__question-name"
+                      >Huidproblemen</a
+                    >
+
+                    <a href="#" class="accordion__question">
+                      <img
+                        class="accordion__arrow"
+                        src="img/down-arrow.png"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="accordion__answer">
+                    <!-- Slider main container -->
+                    <div class="swiper submenu__slider">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div
+                        class="swiper-pagination swiper-pagination--submenu"
+                      ></div>
+                    </div>
+                    <!-- Slider main container -->
+                  </div>
+                </div>
+                <!-- Single Faq -->
+
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <div class="accordion__question-area">
+                    <a href="#" class="accordion__question-name"
+                      >Behandelingen</a
+                    >
+
+                    <a href="#" class="accordion__question">
+                      <img
+                        class="accordion__arrow"
+                        src="img/down-arrow.png"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="accordion__answer">
+                    <!-- Slider main container -->
+                    <div class="swiper submenu__slider">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div
+                        class="swiper-pagination swiper-pagination--submenu"
+                      ></div>
+                    </div>
+                    <!-- Slider main container -->
+                  </div>
+                </div>
+                <!-- Single Faq -->
+
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <div class="accordion__question-area">
+                    <a href="#" class="accordion__question-name"
+                      >Laserontharen</a
+                    >
+
+                    <a href="#" class="accordion__question">
+                      <img
+                        class="accordion__arrow"
+                        src="img/down-arrow.png"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="accordion__answer">
+                    <!-- Slider main container -->
+                    <div class="swiper submenu__slider">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div
+                        class="swiper-pagination swiper-pagination--submenu"
+                      ></div>
+                    </div>
+                    <!-- Slider main container -->
+                  </div>
+                </div>
+                <!-- Single Faq -->
+
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <a href="#">Prijzen</a>
+                </div>
+                <!-- Single Faq -->
+
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <div class="accordion__question-area">
+                    <a href="#" class="accordion__question-name">Webshop</a>
+
+                    <a href="#" class="accordion__question">
+                      <img
+                        class="accordion__arrow"
+                        src="img/down-arrow.png"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="accordion__answer">
+                    <!-- Slider main container -->
+                    <div class="swiper submenu__slider">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="submenu__items-area">
+                            <p>Grove huid</p>
+
+                            <div class="submenu__items">
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                              <a href="#"> &gt; Acne littekens</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div
+                        class="swiper-pagination swiper-pagination--submenu"
+                      ></div>
+                    </div>
+                    <!-- Slider main container -->
+                  </div>
+                </div>
+                <!-- Single Faq -->
+
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <a href="#">De Kliniek</a>
+                </div>
+                <!-- Single Faq -->
+
+                <!-- Single Faq -->
+                <div class="basic-accordion__item">
+                  <a href="#">Zorgcheck</a>
+                </div>
+                <!-- Single Faq -->
+              </div>
+            </div>
+
+            <div class="main-header__right">
+              <button>
+                <img id="searchOpen" src="img/search.png" alt="search" />
+              </button>
+              <button id="openModalBtnLogin">
+                <img src="img/user.png" alt="user" />
+              </button>
+              <button class="cart-btn">
+                <img src="img/cart.png" alt="cart" />
+              </button>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button class="navbar-toggler">
+              <div class="toggler-btn">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+              </div>
+            </button>
+            <!-- Hamburger Icon -->
+          </div>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-overlay">
+          <div class="search-wrapper">
+            <div class="search-box">
+              <form action="" class="search-form">
+                <input
+                  class="input-style"
+                  type="text"
+                  name="search"
+                  placeholder="Search"
+                />
+                <!-- <label for="fname" class="search-form__label">Search</label> -->
+                <button class="search-submit-btn" type="submit">
+                  <img src="img/search.png" alt="search" />
+                </button>
+              </form>
+
+              <button class="close-search-btn">
+                <img src="img/close.png" alt="close" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Search Box -->
+      </nav>
+      <!-- Main Header -->
+    </header>
+    <!-- Header Area -->
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Area -->
+      <section class="hero-area">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content">
+              <h1>Skinlab clinic</h1>
+              <h3 class="heading--48">
+                Een specialistische oplossing voor elke huid
+              </h3>
+
+              <p>Huid- en Laserkliniek</p>
+
+              <div class="custom-btns">
+                <a href="#" class="custom-btn custom-btn--behandelingen"
+                  >Behandelingen</a
+                >
+                <a href="#" class="custom-btn custom-btn--webshop">Webshop</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Area -->
+
+      <!-- Process Area -->
+      <section class="process-area">
+        <div class="container">
+          <div class="process">
+            <div id="processNav" class="swiper process__items">
+              <div class="swiper-wrapper">
+                <!-- Single Item -->
+                <div class="swiper-slide process-nav-slide">
+                  <div class="process__item">
+                    <img src="img/process-icon1.png" alt="process icon" />
+
+                    <h5>
+                      Gratis intake met een gespecialiseerde huidtherapeut
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide process-nav-slide">
+                  <div class="process__item">
+                    <img src="img/process-icon2.png" alt="process icon" />
+
+                    <h5>
+                      Meest geavanceerde huidanalyse met Observ 520x Pro Plus
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide process-nav-slide">
+                  <div class="process__item">
+                    <img src="img/process-icon3.png" alt="process icon" />
+
+                    <h5>
+                      Behandelplan op maat o.b.v. wensen, behoeften en
+                      verwachtingen
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide process-nav-slide">
+                  <div class="process__item">
+                    <img src="img/process-icon4.png" alt="process icon" />
+
+                    <h5>
+                      Microneedling met Derma NeoPen voor o.a. huidverjonging en
+                      egale huid
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide process-nav-slide">
+                  <div class="process__item">
+                    <img src="img/process-icon5.png" alt="process icon" />
+
+                    <h5>
+                      Lichtflitsen (IPL) van de huid voor o.a. verwijderen van
+                      pigment, vaatjes
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide process-nav-slide">
+                  <div class="process__item">
+                    <img src="img/process-icon6.png" alt="process icon" />
+
+                    <h5>Permanente ontharing middels SparkPro</h5>
+                  </div>
+                </div>
+                <!-- Single Item -->
+              </div>
+            </div>
+
+            <div id="processSlider" class="swiper process__slider">
+              <div class="swiper-wrapper">
+                <!-- Single Slide -->
+                <div class="swiper-slide process__slide">
+                  <div class="process__slide-image">
+                    <img src="img/process-slide-1.jpg" alt="process slide" />
+                  </div>
+
+                  <div class="process__item">
+                    <img src="img/process-icon1.png" alt="process icon" />
+
+                    <h5>
+                      Gratis intake met een gespecialiseerde huidtherapeut
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide process__slide">
+                  <div class="process__slide-image">
+                    <img src="img/process-slide-1.jpg" alt="process slide" />
+                  </div>
+
+                  <div class="process__item">
+                    <img src="img/process-icon2.png" alt="process icon" />
+
+                    <h5>
+                      Meest geavanceerde huidanalyse met Observ 520x Pro Plus
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide process__slide">
+                  <div class="process__slide-image">
+                    <img src="img/process-slide-1.jpg" alt="process slide" />
+                  </div>
+
+                  <div class="process__item">
+                    <img src="img/process-icon3.png" alt="process icon" />
+
+                    <h5>
+                      Behandelplan op maat o.b.v. wensen, behoeften en
+                      verwachtingen
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide process__slide">
+                  <div class="process__slide-image">
+                    <img src="img/process-slide-1.jpg" alt="process slide" />
+                  </div>
+
+                  <div class="process__item">
+                    <img src="img/process-icon4.png" alt="process icon" />
+
+                    <h5>
+                      Microneedling met Derma NeoPen voor o.a. huidverjonging en
+                      egale huid
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide process__slide">
+                  <div class="process__slide-image">
+                    <img src="img/process-slide-1.jpg" alt="process slide" />
+                  </div>
+
+                  <div class="process__item">
+                    <img src="img/process-icon5.png" alt="process icon" />
+
+                    <h5>
+                      Lichtflitsen (IPL) van de huid voor o.a. verwijderen van
+                      pigment, vaatjes
+                    </h5>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide process__slide">
+                  <div class="process__slide-image">
+                    <img src="img/process-slide-1.jpg" alt="process slide" />
+                  </div>
+
+                  <div class="process__item">
+                    <img src="img/process-icon6.png" alt="process icon" />
+
+                    <h5>Permanente ontharing middels SparkPro</h5>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+              </div>
+
+              <div class="swiper-pagination swiper-pagination--process"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-prev--process">
+                <span
+                  ><img src="img/product-left-arrow.png" alt="arrow"
+                /></span>
+              </div>
+              <div class="swiper-button-next swiper-button-next--process">
+                <span
+                  ><img src="img/product-right-arrow.png" alt="arrow"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Process Area -->
+
+      <!-- Complete Area -->
+      <section class="complete-area">
+        <div class="container">
+          <div class="complete">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Een complete oplossing</h2>
+
+              <p class="desc--32">
+                Alles wat je nodig hebt om je huid een boost te geven en je
+                zelfvertrouwen te stimuleren. Thuis of op je werk, buiten of
+                binnen, Skinlab Clinic cares
+              </p>
+            </div>
+            <!-- Section Heading -->
+
+            <div class="complete__items">
+              <!-- Single Item -->
+              <div class="complete__item">
+                <div class="complete__item-header">
+                  <div class="complete-header-content">
+                    <h6>(Huidtherapeutische) Behandelingen</h6>
+                    <p class="desc--16">Schoonheid start van binnenuit</p>
+                  </div>
+
+                  <div class="complete__item-icon">
+                    <img
+                      class="complete__item-icon-main"
+                      src="img/complete-icon1.png"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="complete__item-main">
+                  <h5 class="heading--24">
+                    Aanvullend verzekerd? Bespreek gratis de mogelijkheden met
+                    een geaccrediteerde huidtherapeut
+                  </h5>
+
+                  <a
+                    href="#"
+                    class="custom-btn custom-btn--standard custom-btn--blog"
+                    >Plan je gratis intake</a
+                  >
+                </div>
+              </div>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <div class="complete__item">
+                <div class="complete__item-header">
+                  <div class="complete-header-content">
+                    <h6>Ontspannende facials</h6>
+                    <p class="desc--16">Ervaar de rust en kom tot jezelf</p>
+                  </div>
+
+                  <div class="complete__item-icon">
+                    <img
+                      class="complete__item-icon-main"
+                      src="img/complete-icon2.png"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="complete__item-main">
+                  <h5 class="heading--24">
+                    Wil jij je aanvullende verzekering niet gebruiken of wil je
+                    gewoon tot rust komen, ervaar dan onze ontspannende facials
+                  </h5>
+
+                  <a
+                    href="#"
+                    class="custom-btn custom-btn--standard custom-btn--blog"
+                    >Plan je facial</a
+                  >
+                </div>
+              </div>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <div class="complete__item">
+                <div class="complete__item-header">
+                  <div class="complete-header-content">
+                    <h6>Ontharen</h6>
+                    <p class="desc--16">Zachte en gladde huid</p>
+                  </div>
+
+                  <div class="complete__item-icon">
+                    <img
+                      class="complete__item-icon-main"
+                      src="img/process-icon6.png"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="complete__item-main">
+                  <h5 class="heading--24">
+                    Een duurzame oplossing voor ongewenste haren en
+                    overbeharing.
+                  </h5>
+
+                  <a
+                    href="#"
+                    class="custom-btn custom-btn--standard custom-btn--blog"
+                    >Plan je ontharings</a
+                  >
+                </div>
+              </div>
+              <!-- Single Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Complete Area -->
+
+      <!-- Populaire Area -->
+      <section class="populaire-area">
+        <div class="container">
+          <div class="populaire">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Populaire behandelingen</h2>
+            </div>
+            <!-- Section Heading -->
+
+            <div class="populaire__items">
+              <!-- Single Item -->
+              <a href="#" class="populaire__item">
+                <img src="img/populaire-1.png" alt="populaire" />
+
+                <button
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                >
+                  Gezicht
+                </button>
+              </a>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <a href="#" class="populaire__item">
+                <img src="img/populaire-2.png" alt="populaire" />
+
+                <button
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                >
+                  Rug
+                </button>
+              </a>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <a href="#" class="populaire__item">
+                <img src="img/populaire-3.png" alt="populaire" />
+
+                <button
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                >
+                  Benen
+                </button>
+              </a>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <a href="#" class="populaire__item">
+                <img src="img/populaire-4.png" alt="populaire" />
+
+                <button
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                >
+                  Schaamstreek
+                </button>
+              </a>
+              <!-- Single Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Populaire Area -->
+
+      <!-- Products Area -->
+      <section class="products">
+        <div class="products__header">
+          <div class="container">
+            <div class="products__header-content">
+              <h4>
+                Een gespecialiseerde kliniek voor alle huidtypen.
+                <span>Maak kennis met de onze producten.</span>
+              </h4>
+
+              <div class="swiper review__logo-items">
+                <div class="swiper-wrapper">
+                  <!-- Single logo -->
+                  <div class="review__logo-slide swiper-slide">
+                    <a href="#" class="trustpilot-rating">
+                      <img src="img/trustpilot-star.svg" alt="trustpilot" />
+                    </a>
+                  </div>
+                  <!-- Single logo -->
+
+                  <!-- Single logo -->
+                  <div class="review__logo-slide swiper-slide">
+                    <a href="#" class="trustpilot-rating">
+                      <img src="img/trustpilot-star.svg" alt="trustpilot" />
+                    </a>
+                  </div>
+                  <!-- Single logo -->
+
+                  <!-- Single logo -->
+                  <div class="review__logo-slide swiper-slide">
+                    <a href="#" class="trustpilot-rating">
+                      <img src="img/trustpilot-star.svg" alt="trustpilot" />
+                    </a>
+                  </div>
+                  <!-- Single logo -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__main">
+          <div class="products__main-content">
+            <div class="swiper products__items">
+              <div class="swiper-wrapper">
+                <!-- Single Product -->
+                <div class="products-slide swiper-slide">
+                  <div class="products__item">
+                    <div class="products__image">
+                      <div class="products__label products__label--basic">
+                        <p>Basis product</p>
+                      </div>
+
+                      <img src="img/product-1.png" alt="product" />
+                    </div>
+
+                    <div class="products__content">
+                      <h6 class="products__item-name">
+                        Vitamin Burst peel-off mask Vitamin Burst
+                      </h6>
+
+                      <div class="products__item-status">
+                        <div
+                          class="products__item-status-circle products__item-status-circle--green"
+                        >
+                          <span
+                            class="products__item-status-circle-main"
+                          ></span>
+                        </div>
+
+                        <p>Ruim op voorraad</p>
+                      </div>
+
+                      <p class="products__item-desc">
+                        Peeling / hydratatie / new skin / anti-aging
+                      </p>
+
+                      <div class="products__item-prices">
+                        <p class="products__item-price">€ 36,00</p>
+                      </div>
+
+                      <button
+                        class="custom-btn custom-btn--standard custom-btn--product-cart-btn"
+                      >
+                        Toevoegen aan winkelmand
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="products-slide swiper-slide">
+                  <div class="products__item">
+                    <div class="products__image">
+                      <div class="products__label products__label--discount">
+                        <p>-25%</p>
+                      </div>
+
+                      <img src="img/product-2.png" alt="product" />
+                    </div>
+
+                    <div class="products__content">
+                      <h6 class="products__item-name">
+                        Skin Architect Mesoserum
+                      </h6>
+
+                      <div class="products__item-status">
+                        <div
+                          class="products__item-status-circle products__item-status-circle--orange"
+                        >
+                          <span
+                            class="products__item-status-circle-main"
+                          ></span>
+                        </div>
+
+                        <p>Beperkte voorraad</p>
+                      </div>
+
+                      <p class="products__item-desc">
+                        Peeling / hydratatie / new skin / anti-aging
+                      </p>
+
+                      <div class="products__item-prices">
+                        <p
+                          class="products__item-price products__item-price--discount"
+                        >
+                          € 36,00
+                        </p>
+                        <p class="products__item-price">€ 27,00</p>
+                      </div>
+
+                      <button
+                        class="custom-btn custom-btn--standard custom-btn--product-cart-btn"
+                      >
+                        Toevoegen aan winkelmand
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="products-slide swiper-slide">
+                  <div class="products__item">
+                    <div class="products__image">
+                      <div class="products__label products__label--trending">
+                        <p>Trending</p>
+                      </div>
+
+                      <img src="img/product-1.png" alt="product" />
+                    </div>
+
+                    <div class="products__content">
+                      <h6 class="products__item-name">
+                        Vitamin Burst peel-off mask Vitamin Burst
+                      </h6>
+
+                      <div class="products__item-status">
+                        <div
+                          class="products__item-status-circle products__item-status-circle--yellow"
+                        >
+                          <span
+                            class="products__item-status-circle-main"
+                          ></span>
+                        </div>
+
+                        <p>Pre-order en krijg 5% korting</p>
+                      </div>
+
+                      <p class="products__item-desc">
+                        Peeling / hydratatie / new skin / anti-aging
+                      </p>
+
+                      <div class="products__item-prices">
+                        <p class="products__item-price">€ 36,00</p>
+                      </div>
+
+                      <button
+                        class="custom-btn custom-btn--standard custom-btn--product-cart-btn"
+                      >
+                        Toevoegen aan winkelmand
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="products-slide swiper-slide">
+                  <div class="products__item">
+                    <div class="products__image">
+                      <img src="img/product-2.png" alt="product" />
+                    </div>
+
+                    <div class="products__content">
+                      <h6 class="products__item-name">
+                        Skin Architect Mesoserum
+                      </h6>
+
+                      <div class="products__item-status">
+                        <div
+                          class="products__item-status-circle products__item-status-circle--red"
+                        >
+                          <span
+                            class="products__item-status-circle-main"
+                          ></span>
+                        </div>
+
+                        <p>Gaat uit assosrtiment</p>
+                      </div>
+
+                      <p class="products__item-desc">
+                        Peeling / hydratatie / new skin / anti-aging
+                      </p>
+
+                      <div class="products__item-prices">
+                        <p class="products__item-price">€ 27,00</p>
+                      </div>
+
+                      <button
+                        class="custom-btn custom-btn--standard custom-btn--product-cart-btn"
+                      >
+                        Toevoegen aan winkelmand
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="products-slide swiper-slide">
+                  <div class="products__item">
+                    <div class="products__image">
+                      <div class="products__label products__label--basic">
+                        <p>Basis product</p>
+                      </div>
+
+                      <img src="img/product-1.png" alt="product" />
+                    </div>
+
+                    <div class="products__content">
+                      <h6 class="products__item-name">
+                        Vitamin Burst peel-off mask Vitamin Burst
+                      </h6>
+
+                      <div class="products__item-status">
+                        <div
+                          class="products__item-status-circle products__item-status-circle--green"
+                        >
+                          <span
+                            class="products__item-status-circle-main"
+                          ></span>
+                        </div>
+
+                        <p>Ruim op voorraad</p>
+                      </div>
+
+                      <p class="products__item-desc">
+                        Peeling / hydratatie / new skin / anti-aging
+                      </p>
+
+                      <div class="products__item-prices">
+                        <p class="products__item-price">€ 36,00</p>
+                      </div>
+
+                      <button
+                        class="custom-btn custom-btn--standard custom-btn--product-cart-btn"
+                      >
+                        Toevoegen aan winkelmand
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="products-slide swiper-slide">
+                  <div class="products__item">
+                    <div class="products__image">
+                      <div class="products__label products__label--discount">
+                        <p>-25%</p>
+                      </div>
+
+                      <img src="img/product-2.png" alt="product" />
+                    </div>
+
+                    <div class="products__content">
+                      <h6 class="products__item-name">
+                        Skin Architect Mesoserum
+                      </h6>
+
+                      <div class="products__item-status">
+                        <div
+                          class="products__item-status-circle products__item-status-circle--orange"
+                        >
+                          <span
+                            class="products__item-status-circle-main"
+                          ></span>
+                        </div>
+
+                        <p>Beperkte voorraad</p>
+                      </div>
+
+                      <p class="products__item-desc">
+                        Peeling / hydratatie / new skin / anti-aging
+                      </p>
+
+                      <div class="products__item-prices">
+                        <p
+                          class="products__item-price products__item-price--discount"
+                        >
+                          € 36,00
+                        </p>
+                        <p class="products__item-price">€ 27,00</p>
+                      </div>
+
+                      <button
+                        class="custom-btn custom-btn--standard custom-btn--product-cart-btn"
+                      >
+                        Toevoegen aan winkelmand
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination swiper-pagination--product"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-prev--product">
+              <span>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 1024 1024"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#fff"
+                    d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="swiper-button-next swiper-button-next--product">
+              <span>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 1024 1024"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#fff"
+                    d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <a href="#" class="custom-btn custom-btn--product"
+              >Alle Producten
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="16"
+                viewBox="0 0 9 16"
+                fill="none"
+              >
+                <path
+                  d="M0.399703 0.420946C0.272999 0.553514 0.172476 0.710979 0.10389 0.884327C0.0353038 1.05768 0 1.2435 0 1.43118C0 1.61885 0.0353038 1.80468 0.10389 1.97802C0.172476 2.15137 0.272999 2.30884 0.399703 2.4414L5.70275 8.00125L0.399703 13.5611C0.144148 13.829 0.000578732 14.1924 0.000578732 14.5713C0.000578732 14.9502 0.144148 15.3136 0.399703 15.5816C0.655257 15.8495 1.00186 16 1.36327 16C1.72468 16 2.07129 15.8495 2.32684 15.5816L8.6003 9.00431C8.727 8.87175 8.82753 8.71428 8.89611 8.54093C8.9647 8.36758 9 8.18175 9 7.99408C9 7.80641 8.9647 7.62058 8.89611 7.44724C8.82753 7.27389 8.727 7.11642 8.6003 6.98385L2.32684 0.406617C1.80747 -0.137904 0.932742 -0.137904 0.399703 0.420946Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Products Area -->
+
+      <!-- Geschikt Area -->
+      <section class="geschikt-area">
+        <div class="container">
+          <div class="geschikt">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Geschikt voor iedere huid</h2>
+
+              <p class="desc--32">
+                Bespreek tijdens een gratis intake de mogelijkheden tot een
+                doelgericht huidverbeteringsplan. Tijdens deze kennismaking
+                zullen wij uw huid analyseren en een gepersonaliseerd advies
+                doen voor uw huidbehoefte en een behandeltraject
+              </p>
+            </div>
+            <!-- Section Heading -->
+
+            <div class="geschikt__items">
+              <!-- Single Item -->
+              <div class="geschikt__item geschikt__item--logos">
+                <h3>Vergoed door zorgverzekeraar</h3>
+
+                <h6>
+                  Wist je dat sommige behandelingen vergoed worden via een
+                </h6>
+
+                <a
+                  href="#"
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                  >Doe de Zorgcheck</a
+                >
+
+                <div class="geschikt__logos">
+                  <div class="geschikt__logos-items geschikt__logos-left">
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-1.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-2.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-3.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-1.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-2.svg" alt="geschikt logo" />
+                    </div>
+                  </div>
+
+                  <div class="geschikt__logos-items geschikt__logos-right">
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-3.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-1.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-2.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-1.svg" alt="geschikt logo" />
+                    </div>
+
+                    <div class="geschikt__logos-item">
+                      <img src="img/geschikt-logo-2.svg" alt="geschikt logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <div class="geschikt__item geschikt__item--eerlijk">
+                <h3>Eerlijk advies</h3>
+
+                <h6>Iedere huid is verschillend en heeft andere behoeftes</h6>
+
+                <a
+                  href="#"
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                  >Plan je gratis huidanalyse</a
+                >
+
+                <div class="eerlijk__images-position">
+                  <div class="eerlijk__images">
+                    <div class="eerlijk__image eerlijk__image1">
+                      <img src="img/profile-img-1.jpg" alt="eerlijk" />
+                    </div>
+
+                    <div class="eerlijk__image eerlijk__image2">
+                      <img src="img/profile-img-1.jpg" alt="eerlijk" />
+                    </div>
+
+                    <div class="eerlijk__image eerlijk__image3">
+                      <img src="img/profile-img-1.jpg" alt="eerlijk" />
+                    </div>
+
+                    <div class="eerlijk__image eerlijk__image4">
+                      <img src="img/profile-img-1.jpg" alt="eerlijk" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <div class="geschikt__item geschikt__item--duurzame">
+                <h3>Duurzame producten</h3>
+
+                <h6>Al onze producten zijn dierproefvrij</h6>
+
+                <a
+                  href="#"
+                  class="custom-btn custom-btn--standard custom-btn--blog"
+                  >Plan je gratis intake</a
+                >
+
+                <div class="geschikt__duurzame-images">
+                  <div class="product__logo">
+                    <img src="img/product-logo-1.png" alt="logo" />
+                  </div>
+
+                  <div class="product__logo">
+                    <img src="img/product-logo-1.png" alt="logo" />
+                  </div>
+
+                  <div class="product__logo">
+                    <img src="img/product-logo-1.png" alt="logo" />
+                  </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <div
+                class="geschikt__item geschikt__item--account toskani__item--gradient"
+              >
+                <h2>Ontdek hier onze behandelingen</h2>
+
+                <h5>
+                  Alle behandelingen worden verricht door een gespecialiseerd
+                  huidtherapeut.
+                </h5>
+
+                <a href="#" class="custom-btn custom-btn--white"
+                  >Bekijk behandelingen
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.399703 0.420946C0.272999 0.553514 0.172476 0.710979 0.10389 0.884327C0.0353038 1.05768 0 1.2435 0 1.43118C0 1.61885 0.0353038 1.80468 0.10389 1.97802C0.172476 2.15137 0.272999 2.30884 0.399703 2.4414L5.70275 8.00125L0.399703 13.5611C0.144148 13.829 0.000578732 14.1924 0.000578732 14.5713C0.000578732 14.9502 0.144148 15.3136 0.399703 15.5816C0.655257 15.8495 1.00186 16 1.36327 16C1.72468 16 2.07129 15.8495 2.32684 15.5816L8.6003 9.00431C8.727 8.87175 8.82753 8.71428 8.89611 8.54093C8.9647 8.36758 9 8.18175 9 7.99408C9 7.80641 8.9647 7.62058 8.89611 7.44724C8.82753 7.27389 8.727 7.11642 8.6003 6.98385L2.32684 0.406617C1.80747 -0.137904 0.932742 -0.137904 0.399703 0.420946Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <div class="geschikt__item geschikt__item--een">
+                <img
+                  class="geschikt__image"
+                  src="img/kliniek-5.png"
+                  alt="geschikt"
+                />
+
+                <h3>Een gezonde huid Is een mooie huid</h3>
+
+                <h6>Al onze producten zijn dierproefvrij en vegan.</h6>
+
+                <a href="#" class="link-btn">Meer over onze huidkliniek ></a>
+              </div>
+              <!-- Single Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Geschikt Area -->
+    </main>
+    <!-- Main Content -->
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__top">
+            <ul class="footer__socials">
+              <li>
+                <a href="#">
+                  <svg
+                    viewBox="0 0 72 72"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>Facebook</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Social-Icons---Rounded-Black"
+                        transform="translate(-152.000000, -43.000000)"
+                      >
+                        <g
+                          id="Facebook"
+                          transform="translate(152.000000, 43.000000)"
+                        >
+                          <rect
+                            id="Rounded"
+                            fill="#000000"
+                            x="0"
+                            y="0"
+                            width="72"
+                            height="72"
+                            rx="8"
+                          ></rect>
+                          <path
+                            d="M60.4641463,13.4173171 L60.4641463,22.7278049 L54.9382927,22.7421951 C50.6068293,22.7421951 49.7721951,24.8 49.7721951,27.807561 L49.7721951,34.4702439 L60.09,34.4702439 L58.7517073,44.8887805 L49.7721951,44.8887805 L49.7721951,72 L39.0097317,72 L39.0097317,44.8887805 L30,44.8887805 L30,34.4702439 L39.0097317,34.4702439 L39.0097317,26.7858537 C39.0097317,17.8639024 44.4478049,13 52.42,13 C56.2204634,13 59.5,13.2878049 60.4641463,13.4173171 Z"
+                            fill="#FFFFFF"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 24 24"
+                    xml:space="preserve"
+                    width="512"
+                    height="512"
+                  >
+                    <g>
+                      <path
+                        d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"
+                      />
+                      <path
+                        d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"
+                      />
+                      <circle cx="18.406" cy="5.594" r="1.44" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 1000 1000"
+                  >
+                    <path
+                      d="M906.25 0H93.75C42.19 0 0 42.19 0 93.75v812.49c0 51.57 42.19 93.75 93.75 93.75l812.5.01c51.56 0 93.75-42.19 93.75-93.75V93.75C1000 42.19 957.81 0 906.25 0zM684.02 319.72c-32.42-21.13-55.81-54.96-63.11-94.38-1.57-8.51-2.45-17.28-2.45-26.25H515l-.17 414.65c-1.74 46.43-39.96 83.7-86.8 83.7-14.57 0-28.27-3.63-40.35-9.99-27.68-14.57-46.63-43.58-46.63-76.97 0-47.96 39.02-86.98 86.97-86.98 8.95 0 17.54 1.48 25.66 4.01V421.89c-8.41-1.15-16.95-1.86-25.66-1.86-105.01 0-190.43 85.43-190.43 190.45 0 64.42 32.18 121.44 81.3 155.92 30.93 21.72 68.57 34.51 109.14 34.51 105.01 0 190.43-85.43 190.43-190.43V400.21c40.58 29.12 90.3 46.28 143.95 46.28V343.03c-28.89 0-55.8-8.59-78.39-23.31z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Footer List -->
+          <div class="footer__list footer__list-newsletter-mobile">
+            <h5>Nieuwsbrief</h5>
+
+            <form action="" class="footer-input-form">
+              <input
+                class="input-style"
+                type="text"
+                name="voer"
+                id="voerMobile"
+                placeholder="Voer je e-mailadres in"
+              />
+
+              <button type="submit" class="footer-input__submit-btn">
+                <img src="img/arrow-down.png" alt="arrow" />
+              </button>
+            </form>
+
+            <div class="single__checkbox single__checkbox--nieuwsbrief">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                id="nieuwsbriefMobile"
+                name="nieuwsbriefMobile"
+                value="nieuwsbriefMobile"
+              />
+
+              <label for="nieuwsbriefMobile">
+                <div class="checkbox__content">
+                  <img
+                    class="radio-icon radio-icon--uncheck"
+                    src="img/checkbox-uncheck.png"
+                    alt="uncheck"
+                  />
+
+                  <img
+                    class="radio-icon radio-icon--check"
+                    src="img/checkbox-check.png"
+                    alt="check"
+                  />
+
+                  <p>
+                    Ik ga akkoord met de
+                    <a href="#">algemene voorwaarden</a>
+                  </p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- Footer List -->
+
+          <div class="footer__content">
+            <!-- Footer List -->
+            <div class="footer__list">
+              <h5>Skinlab Clinic</h5>
+
+              <ul class="footer__list-items">
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Veel gestelde vragen</a></li>
+                <li><a href="#">Recensies</a></li>
+                <li><a href="#">Vacatures</a></li>
+                <li><a href="#">Apparatuur</a></li>
+              </ul>
+            </div>
+            <!-- Footer List -->
+
+            <!-- Footer List -->
+            <div class="footer__list">
+              <h5>Producten</h5>
+
+              <ul class="footer__list-items">
+                <li><a href="#">AlphaH</a></li>
+                <li><a href="#">Toskani</a></li>
+                <li><a href="#">Thank Me Later</a></li>
+                <li><a href="#">Mintenz</a></li>
+              </ul>
+            </div>
+            <!-- Footer List -->
+
+            <!-- Footer List -->
+            <div class="footer__list">
+              <h5>Behandelingen</h5>
+
+              <ul class="footer__list-items">
+                <li><a href="#">Acne Therapie</a></li>
+                <li><a href="#">Camouflage Theraphie</a></li>
+                <li><a href="#">Diepte reiniging</a></li>
+                <li><a href="#">Facials</a></li>
+                <li><a href="#">Laserontharing</a></li>
+                <li><a href="#">Medische peelings</a></li>
+                <li><a href="#">Microneedling</a></li>
+              </ul>
+            </div>
+            <!-- Footer List -->
+
+            <!-- Footer List -->
+            <div class="footer__list">
+              <h5>Openingstijden</h5>
+
+              <ul class="footer__list-items footer__list-items--days">
+                <li>
+                  <p>
+                    <span class="footer-day">Maandag</span>
+                    <span class="footer-time">09:00 - 17:30</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-day">Dinsdag</span>
+                    <span class="footer-time">09:00 - 12:00</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-day">Woensdag</span>
+                    <span class="footer-time">09:00 - 17:30</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-day">Donderdag</span>
+                    <span class="footer-time">09:00 - 17:30</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-day">Vrijdag</span>
+                    <span class="footer-time">09:00 - 13:00</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-day">Zaterdag</span>
+                    <span class="footer-time">Op afspraak</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-day">Zondag</span>
+                    <span class="footer-time">Gesloten</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- Footer List -->
+
+            <div class="footer__list-group">
+              <!-- Footer List -->
+              <div class="footer__list">
+                <h5>Nieuwsbrief</h5>
+
+                <form action="" class="footer-input-form">
+                  <input
+                    class="input-style"
+                    type="text"
+                    name="voer"
+                    id="voerDesktop"
+                    placeholder="Voer je e-mailadres in"
+                  />
+
+                  <button type="submit" class="footer-input__submit-btn">
+                    <img src="img/arrow-down.png" alt="arrow" />
+                  </button>
+                </form>
+
+                <div class="single__checkbox single__checkbox--nieuwsbrief">
+                  <input
+                    class="custom-checkbox"
+                    type="checkbox"
+                    id="nieuwsbriefDesktop"
+                    name="nieuwsbriefDesktop"
+                    value="nieuwsbriefDesktop"
+                  />
+
+                  <label for="nieuwsbriefDesktop">
+                    <div class="checkbox__content">
+                      <img
+                        class="radio-icon radio-icon--uncheck"
+                        src="img/checkbox-uncheck.png"
+                        alt="uncheck"
+                      />
+
+                      <img
+                        class="radio-icon radio-icon--check"
+                        src="img/checkbox-check.png"
+                        alt="check"
+                      />
+
+                      <p>
+                        Ik ga akkoord met de
+                        <a href="#">algemene voorwaarden</a>
+                      </p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <!-- Footer List -->
+
+              <!-- Footer List -->
+              <div class="footer__list">
+                <h5>Contact</h5>
+
+                <ul class="footer__list-items">
+                  <li><p>Boddenstraat 36</p></li>
+                  <li><p>7607 BN Almelo</p></li>
+                  <li>
+                    <a href="tel:+310850602446">+31 (0)85 060 24 46</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@skinlabclinic.nl"
+                      >info@skinlabclinic.nl</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer List -->
+            </div>
+          </div>
+
+          <div class="basic-accordion default-accordion">
+            <!-- Single Faq -->
+            <div class="basic-accordion__item">
+              <a href="#" class="accordion__question">
+                <h3>Skinlab Clinic</h3>
+
+                <img
+                  class="accordion__arrow"
+                  src="img/down-arrow.png"
+                  alt="arrow"
+                />
+              </a>
+
+              <div class="accordion__answer">
+                <ul class="footer__list-items">
+                  <li><a href="#">Over ons</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Veel gestelde vragen</a></li>
+                  <li><a href="#">Recensies</a></li>
+                  <li><a href="#">Vacatures</a></li>
+                  <li><a href="#">Apparatuur</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Single Faq -->
+
+            <!-- Single Faq -->
+            <div class="basic-accordion__item">
+              <a href="#" class="accordion__question">
+                <h3>Producten</h3>
+
+                <img
+                  class="accordion__arrow"
+                  src="img/down-arrow.png"
+                  alt="arrow"
+                />
+              </a>
+
+              <div class="accordion__answer">
+                <ul class="footer__list-items">
+                  <li><a href="#">AlphaH</a></li>
+                  <li><a href="#">Toskani</a></li>
+                  <li><a href="#">Thank Me Later</a></li>
+                  <li><a href="#">Mintenz</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Single Faq -->
+
+            <!-- Single Faq -->
+            <div class="basic-accordion__item">
+              <a href="#" class="accordion__question">
+                <h3>Behandelingen</h3>
+
+                <img
+                  class="accordion__arrow"
+                  src="img/down-arrow.png"
+                  alt="arrow"
+                />
+              </a>
+
+              <div class="accordion__answer">
+                <ul class="footer__list-items">
+                  <li><a href="#">Acne Therapie</a></li>
+                  <li><a href="#">Camouflage Theraphie</a></li>
+                  <li><a href="#">Diepte reiniging</a></li>
+                  <li><a href="#">Facials</a></li>
+                  <li><a href="#">Laserontharing</a></li>
+                  <li><a href="#">Medische peelings</a></li>
+                  <li><a href="#">Microneedling</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Single Faq -->
+
+            <!-- Single Faq -->
+            <div class="basic-accordion__item">
+              <a href="#" class="accordion__question">
+                <h3>Openingstijden</h3>
+
+                <img
+                  class="accordion__arrow"
+                  src="img/down-arrow.png"
+                  alt="arrow"
+                />
+              </a>
+
+              <div class="accordion__answer">
+                <ul class="footer__list-items footer__list-items--days">
+                  <li>
+                    <p>
+                      <span class="footer-day">Maandag</span>
+                      <span class="footer-time">09:00 - 17:30</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="footer-day">Dinsdag</span>
+                      <span class="footer-time">09:00 - 12:00</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="footer-day">Woensdag</span>
+                      <span class="footer-time">09:00 - 17:30</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="footer-day">Donderdag</span>
+                      <span class="footer-time">09:00 - 17:30</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="footer-day">Vrijdag</span>
+                      <span class="footer-time">09:00 - 13:00</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="footer-day">Zaterdag</span>
+                      <span class="footer-time">Op afspraak</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="footer-day">Zondag</span>
+                      <span class="footer-time">Gesloten</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Single Faq -->
+
+            <!-- Single Faq -->
+            <div class="basic-accordion__item">
+              <a href="#" class="accordion__question">
+                <h3>Contact</h3>
+
+                <img
+                  class="accordion__arrow"
+                  src="img/down-arrow.png"
+                  alt="arrow"
+                />
+              </a>
+
+              <div class="accordion__answer">
+                <ul class="footer__list-items">
+                  <li><p>Boddenstraat 36</p></li>
+                  <li><p>7607 BN Almelo</p></li>
+                  <li>
+                    <a href="tel:+310850602446">+31 (0)85 060 24 46</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@skinlabclinic.nl"
+                      >info@skinlabclinic.nl</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Single Faq -->
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__bottom-left">
+              <p>© 2023 Skinlab Clinic</p>
+
+              <ul class="footer__bottom-links">
+                <li><a href="#">Algemene voorwaarden</a></li>
+                <li><a href="#">Privacy verklaring</a></li>
+                <li><a href="#">Geschillen</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__bottom-logos">
+              <!-- Single Item -->
+              <a href="#" class="footer__bottom-logo">
+                <img src="img/kp-logo.png" alt="footer logo" />
+              </a>
+              <!-- Single Item -->
+
+              <!-- Single Item -->
+              <a href="#" class="footer__bottom-logo">
+                <img src="img/nvh-logo.png" alt="footer logo" />
+              </a>
+              <!-- Single Item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area -->
+
+    <!-- JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- JS CDN Links -->
+  </body>
+</html>
