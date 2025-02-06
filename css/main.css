@@ -893,8 +893,7 @@ main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
     url("../img/hero.jpg");
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 14.5rem;
+  align-items: center;
 }
 
 .hero-logo {
@@ -925,16 +924,12 @@ main {
 
 .hero {
   display: flex;
-  justify-content: center;
 }
 
 .hero__content {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 63rem;
-  width: 100%;
+  align-items: flex-start;
 }
 
 .hero__content h1,
@@ -966,11 +961,16 @@ main {
 }
 
 .hero .custom-btns {
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .hero .custom-btn {
   min-width: 19rem;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
 }
 
 .custom-btn--behandelingen {

@@ -30,6 +30,17 @@
   .vancancie-form {
     max-width: 120rem;
   }
+
+  .geschikt-area .container {
+    padding: 0;
+  }
+
+  .geschikt-area .section-heading,
+  .geschikt__item {
+    width: calc(100% - 14rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -130,13 +141,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .geschikt__item {
-    /* max-width: 38rem; */
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .geschikt__item--account {
     width: 100%;
     max-width: 100%;
@@ -148,7 +152,7 @@
     -ms-border-radius: 0;
     -o-border-radius: 0;
     text-align: center;
-    padding: 3.2rem;
+    padding: 3.2rem 7rem;
   }
 
   .geschikt__item--account h2 {
@@ -175,7 +179,7 @@
   } */
 
   .geschikt__item--logos {
-    min-height: 51.8rem;
+    min-height: 41.8rem;
   }
 
   .geschikt__item h3 {
@@ -728,10 +732,6 @@
     padding: 0 4.5rem;
   } */
 
-  .geschikt__item--logos {
-    min-height: 51.5rem;
-  }
-
   .products .slick-arrow {
     opacity: 0.05;
     bottom: auto;
@@ -936,6 +936,16 @@
   .top-header__links li {
     display: none;
   }
+
+  .geschikt-area .section-heading,
+  .geschikt__item {
+    width: calc(100% - 9rem);
+  }
+
+  .geschikt__item--account {
+    padding: 3.2rem 4.5rem;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1131,7 +1141,7 @@
   }
 
   .hero-area {
-    padding-bottom: 9rem;
+    padding-bottom: 8rem;
   }
 
   .search-wrapper {
@@ -1740,6 +1750,41 @@
 
   .process-area {
     padding-top: 6rem;
+  }
+
+  .geschikt-area .section-heading,
+  .geschikt__item {
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .geschikt__item--account {
+    padding: 3.2rem 2rem;
+  }
+
+  .geschikt-area .section-heading,
+  .geschikt__item,
+  .geschikt__item--een a {
+    text-align: center;
+  }
+
+  .geschikt__item .geschikt__image {
+    margin: 0 auto;
+  }
+
+  .geschikt__item--een a {
+    justify-content: center;
+  }
+
+  .geschikt__item .custom-btn,
+  .geschikt__item--account h5 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-area {
+    align-items: flex-end;
   }
 }
 
