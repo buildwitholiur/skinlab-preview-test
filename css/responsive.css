@@ -34,13 +34,6 @@
   .geschikt-area .container {
     padding: 0;
   }
-
-  .geschikt-area .section-heading,
-  .geschikt__item {
-    width: calc(100% - 14rem);
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media (max-width: 1199.98px) {
@@ -614,6 +607,18 @@
 
   .geschikt__item .geschikt__image {
     width: 15.5rem;
+  }
+
+  .geschikt-area .section-heading,
+  .geschikt__item {
+    width: calc(100% - 14rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .geschikt__item--account {
+    padding: 3.2rem 7rem;
+    width: 100% !important;
   }
 }
 
